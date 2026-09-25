@@ -1,0 +1,130 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #fcfff8;
+    color: #18332c;
+}
+
+.page-shell {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.page-header {
+    padding: 30px 0;
+}
+
+.wordmark {
+    color: #18332c;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.calculator {
+    padding: 40px;
+    background: rgba(192, 192, 192, 0.863);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #0002;
+}
+
+h1 {
+    margin: 15px 0 10px;
+    font-size: 48px;
+}
+
+.intro-copy {
+    color: #68766e;
+}
+
+.grade-form {
+    margin-top: 30px;
+}
+
+.form-heading {
+    margin-bottom: 10px;
+}
+
+.grade-fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grade-field {
+    display: grid;
+    gap: 5px;
+    color: #68766e;
+}
+
+.grade-field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.calculate-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #18332c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calculate-button:hover {
+    background: #287256;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f5ed;
+    border-radius: 6px;
+}
+
+.result-status {
+    font-size: 20px;
+}
+
+.result-score {
+    font-size: 30px;
+    font-weight: bold;
+    color: #287256;
+}
+
+.scale-note {
+    margin-top: 20px;
+    color: #68766e;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .grade-fields {
+        grid-template-columns: 1dvb;
+    }
+}
+

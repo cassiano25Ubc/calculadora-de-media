@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f4f6f2">
+	<title>Calculadora demédia</title>
+	<link rel="stylesheet" href=".css">
+	<script src=".js" defer></script>
+</head>
+<body>
+	<main class="page-shell">
+		<header class="page-header">
+			<a class="wordmark" href="#inicio">nota.</a>
+
+		</header>
+
+		<section class="calculator" id="inicio" aria-labelledby="page-title">
+			<p class="eyebrow">SUAS NOTAS, EM PERSPECTIVA</p>
+			<h1 id="page-title">Calculadora<br>de média.</h1>
+			<p class="intro-copy">Descubra como está seu desempenho.</p>
+
+			<form class="grade-form" id="grade-form" novalidate>
+				<div class="form-heading">
+					<h2>Insira suas notas</h2>
+					<span>0 a 10</span>
+				</div>
+
+				<div class="grade-fields">
+					<label class="grade-field">
+						Nota 01
+						<input id="nota-1" name="nota-1" type="number" min="0" max="10" step="0.1" placeholder="0,0" inputmode="decimal" required>
+					</label>
+					<label class="grade-field">
+						Nota 02
+						<input id="nota-2" name="nota-2" type="number" min="0" max="10" step="0.1" placeholder="0,0" inputmode="decimal" required>
+					</label>
+					<label class="grade-field">
+						Nota 03
+						<input id="nota-3" name="nota-3" type="number" min="0" max="10" step="0.1" placeholder="0,0" inputmode="decimal" required>
+					</label>
+				</div>
+
+				<p class="form-error" id="form-error" role="alert" hidden></p>
+				<button class="calculate-button" type="submit">Calcular média</button>
+			</form>
+
+			<section class="result" id="result" aria-live="polite" aria-atomic="true">
+				<div class="result-copy">
+					<span class="result-label">SEU RESULTADO</span>
+					<p class="result-status" id="result-status">Aguardando notas</p>
+				</div>
+				<p class="result-score">
+					<span id="result-average">--</span>
+					<small>/ 10</small>
+				</p>
+			</section>
+
+			<p class="scale-note">Ruim: abaixo de 5 · Bom: de 5 a 7,9 · Ótimo: a partir de 8</p>
+		</section>
+	</main>
+</body>
+</html>
