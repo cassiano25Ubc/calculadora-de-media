@@ -1,1 +1,1 @@
-# calculadora-de-m-dia
+# calculadora-de-média
