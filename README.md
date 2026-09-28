@@ -108,7 +108,7 @@ Durante o desenvolvimento foram praticados conceitos importantes de JavaScript, 
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/cassiano25Ubc/-Landing-Page.git
+file:///c%3A/calculadora%20de%20m%C3%A9dia/index.html
 ```
 
 2. Abra a pasta do projeto.
